@@ -1,10 +1,11 @@
 const memberinfo = [
-    { member: "xmb9", discord: "988950574387068968", github: "xmb9", website: "https://archima.xyz", role: "Owner of Ethereal Workshop", avatar: "988950574387068968/3813d82f009289a8caa9a7d73e7ee40b.png", color: "30cc74" },
-    { member: "kxtz", discord: "952792525637312552", github: "kxtzownsu", website: "https://kxtz.dev", role: "Co-Owner of Ethereal Workshop", avatar: "952792525637312552/1d724b961ca632451638bc388cb98eda.png" },
-    { member: "Rifting", discord: "", github: "rifting", website: "", role: "Member of Ethereal Workshop", avatar: "578375908247863296/0afae146413d1e4685256f255a045f85.png" },
-    { member: "Boeing 747", discord: "1037713379780993114", github: "notboeing747", website: "", role: "Member of Ethereal Workshop", avatar: "1037713379780993114/f192e1b55c294f7368c45476055cdfb0.png" },
-    { member: "arbstro", discord: "1083909291091693708", github: "", website: "https://arb.arbstro.workers.dev/", role: "Member of Ethereal Workshop", avatar: "1083909291091693708/42f49642d9e406b398f91aeb54696ef9.png" },
-    { member: "Writable", discord: "480818241145536513", github: "MunyDev", website: "", role: "Member of Ethereal Workshop", avatar: "480818241145536513/8342048b6d00229f43b6c835c083abfb.png" },
+    { member: "xmb9", discord: "988950574387068968", github: "xmb9", website: "https://archima.xyz", role: "Former Owner of Ethereal Workshop", color: "30cc74" },
+    { member: "sophia", discord: "988950574387068968", github: "sophiaasophieee", website: "https://soaphia.xyz", role: "Former Co-Owner of Ethereal Workshop", color: "ebaaee" },
+    { member: "kxtz", discord: "952792525637312552", github: "kxtzownsu", website: "https://kxtz.dev", role: "Former Co-Owner of Ethereal Workshop" },
+    { member: "Rifting", discord: "", github: "rifting", website: "", role: "Former Member of Ethereal Workshop" },
+    { member: "Boeing 747", discord: "1037713379780993114", github: "notboeing747", website: "", role: "Former Member of Ethereal Workshop" },
+    { member: "arbstro", discord: "1083909291091693708", github: "", website: "https://arb.arbstro.workers.dev/", role: "Former Member of Ethereal Workshop" },
+    { member: "Writable", discord: "480818241145536513", github: "MunyDev", website: "", role: "Former Member of Ethereal Workshop" },
 ];
 function mozzarellaReference(color, percentage) {
     const r = parseInt(color.slice(0, 2), 16);
@@ -22,12 +23,12 @@ function renderMembers(data) {
     const container = document.getElementById("members-container");
     container.innerHTML = "";
 
-    data.forEach(({ member, discord, github, website, role, avatar, color }) => {
+    data.forEach(({ member, discord, github, website, role, color }) => {
         const div = document.createElement("div");
         div.className = "member";
 
         const img = document.createElement("img");
-        img.src = `https://cdn.discordapp.com/avatars/${avatar}`;
+        img.src = `https://github.com/${github}.png`;
         img.alt = member;
         img.className = "membericon";
         
