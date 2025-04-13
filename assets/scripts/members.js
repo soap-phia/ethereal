@@ -4,7 +4,7 @@ const memberinfo = [
     { member: "kxtz", discord: "952792525637312552", github: "kxtzownsu", website: "https://kxtz.dev", role: "Former Co-Owner of Ethereal Workshop" },
     { member: "Rifting", discord: "", github: "rifting", website: "", role: "Former Member of Ethereal Workshop" },
     { member: "Boeing 747", discord: "1037713379780993114", github: "notboeing747", website: "", role: "Former Member of Ethereal Workshop" },
-    { member: "arbstro", discord: "1083909291091693708", github: "", website: "https://arb.arbstro.workers.dev/", role: "Former Member of Ethereal Workshop" },
+    { member: "arbstro", discord: "1083909291091693708", github: "arbstro", website: "https://arb.arbstro.workers.dev/", role: "Former Member of Ethereal Workshop" },
     { member: "Writable", discord: "480818241145536513", github: "MunyDev", website: "", role: "Former Member of Ethereal Workshop" },
 ];
 function mozzarellaReference(color, percentage) {
