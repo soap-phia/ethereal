@@ -23,21 +23,36 @@
             font-family: 'Terminus', monospace;
             font-size: 48px;
         }
-
-        .o7 {
-            color: grey;
-        }
-
-        .o7 b {
-            color: #676767;
-        }
-
-        a {
-            text-decoration: none;
-        }
     </style>
+    <script>
+        var date = new Date("Jun 25, 2025 12:00:00 EST").getTime();
+        var x = setInterval(function() {
+          var now = new Date().getTime();
+          var distance = date - now;
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          var texts = [
+            "Soon.",
+            "Day of Judgement, God is calling...",
+            "Your aspirations shall be answered in the coming moments.",
+            "We'll be back shortly after a word from our sponsors!",
+            "The silence is too deafening.",
+            "Break the ice, I can't take anymore.",
+            "Determined to see a result out of your data mining?"
+          ];
+          document.getElementById("clock").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+          document.title = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("clock").innerHTML = texts[Math.floor(Math.random()*texts.length)];
+            document.title = document.getElementById("clock").innerHTML;
+          }
+        }, 1000);
+        </script>
 </head>
 <body>
-    <h6 class="o7">🪦 Here lies <a href="countdown.html"><b>Ethereal Workshop</b></a>, 2025-2025</h6>
+    <h6 id="clock">Loading...</h6>
 </body>
 </html>
