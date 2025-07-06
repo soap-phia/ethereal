@@ -1,7 +1,8 @@
 const memberinfo = [
     { member: "xmb9", discord: "988950574387068968", github: "xmb9", website: "https://archima.xyz", role: "Owner of Ethereal Workshop", color: "30cc74" },
     { member: "Sophia", discord: "988950574387068968", github: "soap-phia", website: "https://soaphia.xyz", role: "Co-Owner of Ethereal Workshop", color: "ebaaee" },
-    { member: "EpicDevices", discord: "1122725941651701891", github: "epic-devices", role: "Co-Owner of Ethereal Workshop", color: "ffffff" }
+    { member: "EpicDevices", discord: "1122725941651701891", github: "epic-devices", role: "Co-Owner of Ethereal Workshop", color: "ffffff" },
+    { member: "AwfulTechnology", avatar: "https://media.discordapp.net/attachments/1390883649158643712/1391084005809721445/image.png?ex=686b4430&is=6869f2b0&hm=00c56a46cbfca6150bcc2838692d132e809d84cfe24c8aad4d8f6b557ef706dd&=&format=webp&quality=lossless&width=989&height=989", github: "", role: "Evil Co-Owner of Ethereal Workshop", color: "ff0000" }
 ];
 function mozzarellaReference(color, percentage) {
     const r = parseInt(color.slice(0, 2), 16);
@@ -19,12 +20,15 @@ function renderMembers(data) {
     const container = document.getElementById("members-container");
     container.innerHTML = "";
 
-    data.forEach(({ member, discord, github, website, role, color }) => {
+    data.forEach(({ member, discord, github, website, role, color, avatar }) => {
         const div = document.createElement("div");
         div.className = "member";
 
         const img = document.createElement("img");
         img.src = `https://github.com/${github}.png`;
+        if (avatar) {
+            img.src = `${avatar}`;
+        }
         img.alt = member;
         img.className = "membericon";
         
