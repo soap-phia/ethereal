@@ -1,8 +1,12 @@
 const memberinfo = [
-    { member: "xmb9", discord: "988950574387068968", github: "xmb9", website: "https://archima.xyz", role: "Owner of Ethereal Workshop", color: "30cc74" },
+    { member: "xmb9", discord: "988950574387068968", github: "xmb9", avatar: "https://cdn.discordapp.com/avatars/988950574387068968/478921fbfe4253b11c4d4b9dd2589b40.png?size=512", website: "https://archima.xyz", role: "Owner of Ethereal Workshop", color: "f9ed98" },
     { member: "Sophia", discord: "988950574387068968", github: "soap-phia", website: "https://soaphia.xyz", role: "Co-Owner of Ethereal Workshop", color: "ebaaee" },
+    { member: "Evie", avatar: "https://cdn.discordapp.com/avatars/917886650951008276/93e87e23accf97eacdaced608048fac2.png?size=512", discord: "917886650951008276", github: "ac3gt", role: "Co-Owner of Ethereal Workshop", color: "ff00ff" },
     { member: "EpicDevices", discord: "1122725941651701891", github: "epic-devices", role: "Co-Owner of Ethereal Workshop", color: "ffffff" },
-    { member: "AwfulTechnology", avatar: "https://media.discordapp.net/attachments/1390883649158643712/1391084005809721445/image.png?ex=686b4430&is=6869f2b0&hm=00c56a46cbfca6150bcc2838692d132e809d84cfe24c8aad4d8f6b557ef706dd&=&format=webp&quality=lossless&width=989&height=989", github: "", role: "Evil Co-Owner of Ethereal Workshop", color: "ff0000" }
+    { member: "Synaptic", discord: "405896057139232778", github: "Synaptic-1234", role: "Staff Member of Ethereal Workshop", color: "ffff00" },
+    { member: "Bardex", avatar: "https://cdn.discordapp.com/avatars/1316554498734424145/2ef7aa324b5e615fb8d11a9c96e26c83.png?size=512", discord: "1316554498734424145", role: "Member of Ethereal Workshop", color: "1f344f" },
+    { member: "Simon", github: "simpansoftware", discord: "1001820177731686500", role: "Member of Ethereal Workshop", color: "95c3fa" },
+    { member: "kraeb", github: "dyinghynixmlc", avatar: "https://cdn.discordapp.com/avatars/721608676783423499/a0aa5583717895e0be3050d215eeda22.png?size=512", discord: "721608676783423499", role: "Member of Ethereal Workshop", color: "32CD32" },
 ];
 function mozzarellaReference(color, percentage) {
     const r = parseInt(color.slice(0, 2), 16);
