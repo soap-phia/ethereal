@@ -1,11 +1,7 @@
 const memberinfo = [
-    { member: "Rifting", discord: "", github: "rifting", website: "", role: "Current Member of Ethereal Workshop" },
-    { member: "xmb9", discord: "988950574387068968", github: "xmb9", website: "https://archima.xyz", role: "Former Owner of Ethereal Workshop", color: "30cc74" },
-    { member: "sophia", discord: "988950574387068968", github: "soap-phia", website: "https://soaphia.xyz", role: "Former Co-Owner of Ethereal Workshop", color: "ebaaee" },
-    { member: "kxtz", discord: "952792525637312552", github: "kxtzownsu", website: "https://kxtz.dev", role: "Former Co-Owner of Ethereal Workshop" },
-    { member: "Boeing 747", discord: "1037713379780993114", github: "notboeing747", website: "", role: "Former Member of Ethereal Workshop" },
-    { member: "arbstro", discord: "1083909291091693708", github: "arbstro", website: "https://arb.arbstro.workers.dev/", role: "Former Member of Ethereal Workshop" },
-    { member: "Writable", discord: "480818241145536513", github: "MunyDev", website: "", role: "Former Member of Ethereal Workshop" },
+    { member: "xmb9", discord: "988950574387068968", github: "xmb9", website: "https://archima.xyz", role: "Owner of Ethereal Workshop", color: "30cc74" },
+    { member: "Sophia", discord: "988950574387068968", github: "soap-phia", website: "https://soaphia.xyz", role: "Co-Owner of Ethereal Workshop", color: "ebaaee" },
+    { member: "EpicDevices", discord: "1122725941651701891", github: "epic-devices", role: "Co-Owner of Ethereal Workshop", color: "ffffff" }
 ];
 function mozzarellaReference(color, percentage) {
     const r = parseInt(color.slice(0, 2), 16);
