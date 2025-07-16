@@ -2,6 +2,9 @@
     font-family: 'Terminus';
     src: url('../Terminus.ttf');
 }
+html {
+  overflow: hidden;
+}
 body {
     display: flex;
     flex-direction: column;
