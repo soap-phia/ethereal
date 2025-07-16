@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Terminus';
+    src: url('../Terminus.ttf');
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "Terminus", monospace;
+    white-space: pre;
+    font-size: 2vh;
+    color: #FFFFFF;
+    overflow: hidden;
+    background-color: #000000;
+}
+h2 {
+    color: #5C5CFF;
+}
+#main {
+    min-height: 100vh;
+    min-width: 100vh;
+    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+#main pre {
+    font-size: 1.5vh;
+    color: #00FFFF;
+    user-select: none;
+}
+a, p {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 1px;
+}
+.options {
+    color: #FFFFFF;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    position: relative;
+    font-family: monospace;
+}
+
+ul li::before,
+ul li::after {
+    content: '';
+    transition: all 0.2s ease-in-out;
+}
+
+ul li:hover::before {
+    content: '> ';
+}
+
+ul li:hover::after {
+    content: ' <';
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+#members, #projects {
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.geen {
+  color: #00ff00;
+}
+
+@keyframes blink {
+  0%, 50% { visibility: visible; }
+  51%, 100% { visibility: hidden; }
+}
+
+.cursor {
+  color: white;
+  animation: blink 1s steps(1, start) infinite;
+  user-select: none;
+}
