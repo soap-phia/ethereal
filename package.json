@@ -1,5 +1,5 @@
 {
-  "name": "ethereal",
+  "name": "",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,19 +9,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.11.1"
-  },
-  "description": "Based website...",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/soap-phia/ethereal.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/soap-phia/ethereal/issues"
-  },
-  "homepage": "https://github.com/soap-phia/ethereal#readme"
+    "astro": "^5.13.5"
+  }
 }
